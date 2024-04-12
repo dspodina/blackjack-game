@@ -17,7 +17,6 @@ function renderGame() {
     dom.h2Text.textContent = "You've got Blackjack!";
     globalVars.hasBlackJack = true;
     dom.addCardBtn.style.display = "none";
-    document.body.style.background = "#95D473";
   } else {
     dom.h2Text.textContent = "You're out of the game!";
     globalVars.isAlive = false;
