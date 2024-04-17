@@ -97,15 +97,15 @@ img {
 }
 
 button {
-  font-family: "Bebas Neue", sans-serif;
-  letter-spacing: 1px;
+  /* font-family: "Bebas Neue", sans-serif; */
+  letter-spacing: 2px;
   color: #ffeed6;
   text-transform: uppercase;
   background: #0e1b18;
-  font-size: 18px;
+  font-size: 14px;
   border-radius: 10px;
   height: 40px;
-  width: 110px;
+  width: 120px;
 }
 
 button:hover {
