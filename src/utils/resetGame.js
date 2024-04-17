@@ -6,7 +6,6 @@ function resetGame() {
   globalVars.sum = 0;
   globalVars.cards = [];
   globalVars.message = "";
-  dom.h2Text.textContent = "";
   dom.totalSum.textContent = "";
   dom.cardsValue.textContent = "";
 }

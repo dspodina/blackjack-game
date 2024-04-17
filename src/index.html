@@ -13,16 +13,27 @@
     <title>BlackJack Casino Game</title>
   </head>
   <body>
-    <div id="inner-elements">
-      <h1><span id="black">Black</span><span id="jack">Jack</span></h1>
-      <div id="inner-text">
-        <h2 id="h2-text">try one's luck</h2>
-        <p id="cards-value"></p>
-        <p id="total-sum"></p>
-      </div>
-      <div class="buttons">
-        <button id="add-card-btn">Add a card</button>
-        <button id="start-game-btn">Start the game</button>
+    <div class="page-container">
+      <header id="header" class="container">
+        <h1><span id="black">Black</span><span id="jack">Jack</span></h1>
+        <button id="start-game-btn">New game</button>
+      </header>
+      <div id="inner-elements" class="container">
+        <div id="person-block">
+          <h2 id="person-header">You</h2>
+          <h3 id="result-text-person"></h3>
+          <div id="rendered-cards">
+            <p id="cards-value-person"></p>
+            <img id="hidden-card" src="../src/public/cover.svg" alt="" />
+          </div>
+          <p id="total-sum-person"></p>
+        </div>
+        <div id="computer-block">
+          <h2 id="computer-header">Computer</h2>
+          <h3 id="result-text-computer"></h3>
+          <p id="cards-value-computer"></p>
+          <p id="total-sum-computer"></p>
+        </div>
       </div>
     </div>
     <script type="module" src="./index.js"></script>

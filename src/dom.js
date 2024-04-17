@@ -1,10 +1,16 @@
 const dom = {
-  h2Text: document.getElementById("h2-text"),
-  totalSum: document.getElementById("total-sum"),
-  cardsValue: document.getElementById("cards-value"),
   startTheGameBtn: document.getElementById("start-game-btn"),
-  addCardBtn: document.getElementById("add-card-btn"),
-  innerTextEl: document.getElementById("inner-text"),
+  personHeader: document.getElementById("person-header"),
+  computerHeader: document.getElementById("computer-header"),
+  resultTextPerson: document.getElementById("result-text-person"),
+  cardsValuePerson: document.getElementById("cards-value-person"),
+  totalSumPerson: document.getElementById("total-sum-person"),
+  resultTextComputer: document.getElementById("result-text-computer"),
+  cardsValueComputer: document.getElementById("cards-value-computer"),
+  totalSumComputer: document.getElementById("total-sum-computer"), 
+  hiddenCard: document.getElementById("hidden-card"),
+  innerElements: document.getElementById("inner-elements")
 };
 
 export default dom;
+

@@ -1,13 +1,38 @@
-body {
+* {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  padding: 0;
+  border: 0 solid transparent;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
   background-color: #a0bba7;
   color: #0e1b18;
+  font-family: "Poppins", sans-serif;
 }
+
+.container {
+ margin: 20px 100px;
+}
+
+
+#inner-elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin-top: 100px;
+}
+
+
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 h1 {
   text-transform: uppercase;
@@ -15,67 +40,76 @@ h1 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
-#h2-text {
-  font-family: "Poppins", sans-serif;
+#person-block,
+#computer-block {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+#person-header,
+#computer-header {
+  display: none;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+#result-text-person,
+#result-text-computer {
   font-weight: 600;
   font-style: normal;
-  font-size: 18px;
+  font-size: 15px;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin: 40px 0 10px;
 }
 
-#cards-value {
+#rendered-cards {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
 }
 
 img {
-  width: 150px;
-  padding: 10px;
+  width: 120px;
+  padding: 5px;
 }
 
-#inner-elements {
-  display: flex;
-  flex-direction: column;
-  font-size: 18px;
-  text-align: center;
-  margin-bottom: 30px;
-  padding: 10px 40px 20px 40px;
-  min-width: 500px;
-  border-radius: 10px;
+#hidden-card {
+  display: none;
 }
 
-.buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 50px;
+#total-sum-person,
+#total-sum-computer {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 30px;
 }
 
 button {
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 1px;
-  color: #0e1b18;
+  color: #ffeed6;
   text-transform: uppercase;
-  background: #ffeed6;
-  padding: 15px 20px;
-  font-weight: bold;
-  font-size: 20px;
-  border: none;
+  background: #0e1b18;
+  font-size: 18px;
   border-radius: 10px;
+  height: 40px;
+  width: 110px;
 }
 
 button:hover {
-  background-color: #ffe6c2;
-}
-
-#add-card-btn {
-  display: none;
+  background-color: black;
 }
 
 #black {
@@ -86,11 +120,3 @@ button:hover {
   color: #fe0b0f;
 }
 
-#total-sum {
-  text-transform: uppercase;
-  font-size: 24px;
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 2px;
-}
