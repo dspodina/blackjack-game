@@ -9,7 +9,6 @@ const dom = {
   cardsValueComputer: document.getElementById("cards-value-computer"),
   totalSumComputer: document.getElementById("total-sum-computer"), 
   hiddenCard: document.getElementById("hidden-card"),
-  innerElements: document.getElementById("inner-elements")
 };
 
 export default dom;

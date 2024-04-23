@@ -1,7 +1,7 @@
 import getRandomCard from "../utils/getRandomCard.js";
 import globalVars from "../globalVariables.js";
-import renderGamePerson from "./renderGamePerson.js";
-import renderGameComputer from "./renderGameComputer.js";
+import renderGamePerson from "../components/renderGamePerson.js";
+import renderGameComputer from "../components/renderGameComputer.js";
 
 
 function startGame() {
@@ -9,12 +9,13 @@ function startGame() {
   let computerFirstCard = getRandomCard();
   let personSecondCard = getRandomCard();
   let computerSecondCard = getRandomCard();
+  let computerThirdCard = getRandomCard();
   
   globalVars.personCards = [personFirstCard, personSecondCard];
-  globalVars.computerCards = [computerFirstCard, computerSecondCard];
+  globalVars.computerCards = [computerFirstCard, computerSecondCard, computerThirdCard ];
   
   globalVars.personSum = personFirstCard + personSecondCard;
-  globalVars.computerSum = computerFirstCard + computerSecondCard;
+  globalVars.computerSum = computerFirstCard + computerSecondCard + computerThirdCard;
   
   renderGamePerson();
   renderGameComputer();

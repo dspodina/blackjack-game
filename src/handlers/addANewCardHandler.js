@@ -1,7 +1,7 @@
 import getRandomCard from "../utils/getRandomCard.js";
 import globalVars from "../globalVariables.js";
-import renderGamePerson from "../utils/renderGamePerson.js";
-import renderGameComputer from "../utils/renderGameComputer.js";
+import renderGamePerson from "../components/renderGamePerson.js";
+import renderGameComputer from "../components/renderGameComputer.js";
 
 const addANewCardHandler = () => {
   if (globalVars.isAlive === true && globalVars.hasBlackJack === false) {
@@ -14,8 +14,7 @@ const addANewCardHandler = () => {
     globalVars.computerSum += cardComputer;
     globalVars.computerCards.push(cardComputer);
     renderGameComputer();
-
-  } else if (globalVars.computerSum >= 21 && globalVars.personSum < 21) {
+  } else if (globalVars.computerSum >= 21 && globalVars.personSum < 20) {
     let cardPerson = getRandomCard();
     globalVars.personSum += cardPerson;
     globalVars.personCards.push(cardPerson);

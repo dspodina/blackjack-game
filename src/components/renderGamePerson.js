@@ -7,7 +7,7 @@ function renderGamePerson() {
     dom.cardsValuePerson.innerHTML += `<img src=./public/${globalVars.personCards[i]}.svg>`;
   }
   dom.personHeader.style.display = "block";
-  dom.hiddenCard.style.display = "inline";
+  dom.hiddenCard.style.display = "block";
   dom.totalSumPerson.textContent = "Sum: " + globalVars.personSum;
   if (globalVars.personSum <= 20) {
     dom.resultTextPerson.textContent = "Add one more card";
