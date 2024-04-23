@@ -1,9 +1,10 @@
 function getRandomCard() {
-  let randomNumber = Math.floor(Math.random() * 14) + 1;
-  if (randomNumber > 13) {
-    return 13;
+  let randomNumber = Math.floor(Math.random() * 13) + 1;
+
+  if (randomNumber > 10) {
+    return 10;
   } else if (randomNumber === 1) {
-    return 14;
+    return 2;
   } else {
     return randomNumber;
   }

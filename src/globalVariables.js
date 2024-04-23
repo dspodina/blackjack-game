@@ -1,9 +1,12 @@
 const globalVars = {
-  cards: [],
-  sum: 0,
+  personCards: [],
+  computerCards: [],
+  personSum: 0,
+  computerSum: 0,
   hasBlackJack: false,
   isAlive: false,
   message: "",
 };
 
 export default globalVars;
+
